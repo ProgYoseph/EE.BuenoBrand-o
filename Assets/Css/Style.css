@@ -299,12 +299,37 @@ nav{
 .info1{
     display: flex;
     margin: 150px auto;
-    width: 60%;
-    background-color: rgb(14, 125, 194);
+    width: 90%;
+    background-color: rgb(76, 140, 236);
 }
 h1 span{
     color: var(--CorBueno);
 }
 .info1 img{
     margin:10px;
+}
+@media (max-width: 669px) {
+	.info1{
+		display: block;
+		text-align: center;
+		padding: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.info1{
+		display: block;
+		padding: 10px;
+	}
+	.footer{
+		margin-top: 100px;
+	}
+}
+@media (max-width: 372px){
+		.info1 img{
+			width: 80%;
+		}
+		.info1{
+			margin-bottom: 300px;
+		}
 }
