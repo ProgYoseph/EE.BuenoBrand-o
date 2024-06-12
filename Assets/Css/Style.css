@@ -305,6 +305,9 @@ nav{
 h1 span{
     color: var(--CorBueno);
 }
+.direita{
+	text-align: center;
+}
 .info1 img{
     margin:10px;
 }
@@ -314,6 +317,12 @@ h1 span{
 		text-align: center;
 		padding: 20px;
 	}
+	.direita{
+		font-size: 20px;
+	}
+	.footer{
+		margin-top: 100px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -321,15 +330,21 @@ h1 span{
 		display: block;
 		padding: 10px;
 	}
+	.direita{
+		font-size: 15px;
+	}
 	.footer{
-		margin-top: 100px;
+		margin-top: 200px;
 	}
 }
 @media (max-width: 372px){
 		.info1 img{
 			width: 80%;
 		}
-		.info1{
-			margin-bottom: 300px;
+		.footer{
+			margin-top: 200px;
+		}
+		.direita{
+			font-size: 13px;
 		}
 }
