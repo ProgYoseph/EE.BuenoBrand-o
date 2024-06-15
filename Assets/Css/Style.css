@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +9,7 @@
 :root{
     --CorBueno:#393B95;
     --fonteP:Open Sans;
+	--fontTwo:Playfair;
 }
 /*Variáveis*/
 body{
@@ -67,7 +69,7 @@ nav{
 @media screen and (max-width: 768px) {
     #menu {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -301,6 +303,7 @@ nav{
     margin: 150px auto;
     width: 90%;
     background-color: rgb(76, 140, 236);
+	border: solid 2px black;
 }
 h1 span{
     color: var(--CorBueno);
@@ -310,6 +313,7 @@ h1 span{
 }
 .info1 img{
     margin:10px;
+	border: solid 1px black;
 }
 @media (max-width: 669px) {
 	.info1{
@@ -321,7 +325,11 @@ h1 span{
 		font-size: 20px;
 	}
 	.footer{
-		margin-top: 100px;
+		margin-top: 600px;
+	}
+	.cursos{
+		display: block;
+		justify-content: center;
 	}
 }
 
@@ -334,7 +342,7 @@ h1 span{
 		font-size: 15px;
 	}
 	.footer{
-		margin-top: 200px;
+		margin-top: 300px;
 	}
 }
 @media (max-width: 372px){
@@ -342,9 +350,38 @@ h1 span{
 			width: 80%;
 		}
 		.footer{
-			margin-top: 200px;
+			margin-top: 400px;
 		}
 		.direita{
 			font-size: 13px;
 		}
+}
+.cursos{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.carta{
+	background-color: #bfbfc2;
+	border: solid black 2px;
+	border-radius: 13px;
+	height: auto;
+	padding: 10px;
+	width: 30%;
+	transition: transform 0.3s ease;
+	box-shadow: 7px 5px 5px rgb(46, 45, 45);
+}
+.carta h1{
+	font-family: var(--fontTwo);
+	text-align: center;
+	font-size: 1.9em;
+}
+.carta span{
+	color: var(--CorBueno);
+	font-size: 20px;
+}
+.carta:hover{
+	transform: scale(0.9);
 }
